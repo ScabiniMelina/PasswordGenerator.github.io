@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="normalize.css">
+    <title>PasswordGenerator</title>
+</head>
+<body>
+    <section class="container">
+        <div class="header__container">
+            <p class="header__password" id="password"></p>
+            <button class="header__button-password" id="copy">Copy</button>
+        </div>
+        <div class="body__container">
+            <div class="item__container-option">
+                <label for="length" class="item__option-name">Password length</label>
+                <input type="number" min="6" max="40" value="20" id="length" class="item__option">
+            </div>
+            <div class="item__container-option">
+                <label for="uppercase" class="item__option-name">Contain uppercase letters</label>
+                <input type="checkbox" id="uppercase" class="item__option">
+            </div>
+            <div class="item__container-option">
+                <label for="lowercase"lowercase class="item__option-name">Contain lowercase letters</label>
+                <input type="checkbox" id="lowercase" class="item__option">
+            </div>
+            <div class="item__container-option">
+                <label for="number" class="item__option-name">Contain numbers</label>
+                <input type="checkbox" id="number"  class="item__option">
+            </div>
+            <div class="item__container-option">
+                <label for="symbols" class="item__option-name">Contain symbols</label>
+                <input type="checkbox" id="symbols" class="item__option">
+            </div>
+        </div>
+        <button class="container__button" id="generate">Generate Password</button>
+        <script src="main.js"></script>
+    </section>
+</body>
+</html>

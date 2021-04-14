@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Open+Sans&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+:root {
+    --color1: #2C7873;
+    --color2: #004445;
+    --color3:  #021C1e;
+    --color4: #12635d;
+    --color-font: #F8F1E5;
+}
+
+body {
+    background-color: var(--color1);
+    color: var(--color-font);
+    font-family: 'Open Sans', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 400px;
+    background: var(--color2);
+    padding: 2em;
+    border-radius: 40px;
+    box-shadow: 5px 5px 25px var(--color3);
+
+}
+
+.header__container{
+    width: 100%;
+    height: 60px;
+    background: var(--color4);
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    position: relative;
+    padding: 1em 1em;
+    margin-bottom: 2em;
+}
+
+.header__password{
+    font-size: 1.5em;
+    overflow-x: auto;
+}
+
+.header__button-password,.container__button{
+    background-color:var(--color3);
+    color: inherit;
+    border:0px;
+    padding: 0.5em;
+    border-radius: 20px;
+}
+
+.header__button-password{
+    position: absolute;
+    font-family: inherit;
+    bottom:0;
+    right: 50%;
+    transform: translate(50%,50%);
+}
+
+
+.container__button{
+    width: 100%; 
+}
+
+.body__container{
+    margin-bottom: 2em;
+}
+
+.item__container-option{
+    padding:0.5em 0 ;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
